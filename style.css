@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    padding: 35px 100px 0;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    margin: 0 15px;
+}
+.nav ul li:first-child{
+    margin-left: 0;
+}
+.nav ul li:last-child{
+    margin-right: 0;
+}
+@media screen and (max-width:1000px){
+    .header{
+        padding: 20px 50px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .header{
+        flex-direction: column;
+    }
+    .header h2{
+        margin-bottom: 10px;
+    }
+    .nav ul li{
+        margin: 0px 7px;
+    }
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+    color: #fff;
+}
+.banner{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.banner-img{
+    background-image: url(./images/v2osk-JE01L3hB0GQ-unsplash.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   
+    
+}
+.banner-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+}
+.banner h1{
+    margin-bottom: 15px;
+    font-size: 65px;
+    font-family: 'Merienda', cursive;
+}
+.banner h2{
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+.banner-btn{
+    background-color: crimson;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+}
+@media screen and (max-width:1000px){
+    section{
+        padding: 100px 50px;
+
+    }
+    
+}
+@media screen and (max-width:600px){
+    section{
+        padding: 125px 30px;
+
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .banner{
+        min-height: 600px;
+    }
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner h2{
+        font-size: 15px;
+    }
+    .banner-btn{
+        padding: 10px 40px;
+    }
+    
+}
+
+/* about-section */
+
+.about{
+    color: #000;
+}
+.about-title{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+.about-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.content-left{
+    padding: 40px;
+    flex-basis: 40%;
+
+}
+.content-right{
+    padding: 35px;
+    flex-basis: 60%;
+}
+.content-right h3{
+    margin-bottom: 2%;
+}
+.content-right p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+
+}
+.content-right .banner-btn{
+    color: #fff;
+}
+@media (max-width: 1000px){
+    .content-left,
+    .content-right{
+        flex-basis: 100%;
+    }
+    .about-content{
+        padding: 8px;
+    }
+    .content-left{
+        padding: 12px;
+    }
+    .content-right{
+        padding: 8px;
+    }
+}
+
+/* services */
+
+.sercices{
+    background-color: rgba(173, 167, 167, 0.867);
+    color: black;
+}
+.services-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-content-info{
+    flex-basis: 33%;
+    text-align: center;
+    padding: 0 30px;
+}
+.services-content-info span i{
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 3%;
+}
+.services-content-info h4{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+@media(max-width: 1000px){
+    .services-content-info{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .services-content-info:last-child{
+        margin-bottom: 0;
+    }
+}
+
+/* contact */
+
+.contact{
+    color: #000;
+}
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.contact-details{
+    flex-basis: 33%;
+    text-align: center;
+}
+.contact-details i{
+    color: crimson;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+@media(max-width: 1000px){
+    .contact-details{
+        flex-basis: 100%;
+        margin-bottom: 25px;
+
+    }
+    
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+  
+}
+.footer p{
+    font-size: 20px;
+    padding: 20px;
+
+
+}
